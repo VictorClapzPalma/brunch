@@ -1,0 +1,194 @@
+@font-face {
+  font-family: font1;
+  src: url("../../assets/fonts/Lobster-Regular.ttf");
+}
+@font-face {
+  font-family: font2;
+  src: url("../../assets/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: font3;
+  src: url("../../assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: font4;
+  src: url("../../assets/fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: font5;
+  src: url("../../assets/fonts/Manuale-Light.ttf");
+}
+section {
+  display: flex;
+  flex-direction: row;
+}
+section .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  line-height: 3rem;
+  border-right: #FFD700 solid 4px;
+  background-color: #b2b2b2;
+  line-height: 5.5rem;
+  flex-direction: column;
+}
+section .left h2 {
+  font-family: font5;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+section .left .cad-produtos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section .left .cad-produtos .arquivos {
+  display: inline-block;
+  padding: 5px;
+  font-size: 18px;
+  font-family: font1;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+section .left .cad-produtos input {
+  font-family: font5;
+  width: 350px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+}
+section .left .cad-produtos label {
+  font-size: 25px;
+  color: white;
+  font-family: font5;
+  font-weight: 800;
+}
+section .left .cad-produtos .id, section .left .cad-produtos .nome, section .left .cad-produtos .imagem, section .left .cad-produtos .descricao, section .left .cad-produtos .preco {
+  margin-bottom: 30px;
+  width: 500px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #FFD700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+section .left .cad-produtos .nome label {
+  margin-right: 20px;
+}
+section .left .cad-produtos .id input {
+  margin-left: 40px;
+}
+section .left .cad-produtos .imagem label {
+  margin-left: 20px;
+}
+section .left .cad-produtos .descricao {
+  gap: 5px;
+}
+section .left .cad-produtos .descricao input {
+  margin-right: 25px;
+}
+section .left .botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+section .left .botao input {
+  border: none;
+  border-radius: 30px;
+  background-color: green;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  font-family: font2;
+  font-weight: 800;
+}
+section .right {
+  font-family: font5;
+  font-weight: 300;
+  width: 50%;
+  text-align: center;
+  line-height: 60px;
+}
+section .right .name {
+  margin-top: 60px;
+  cursor: pointer;
+  font-size: 32px;
+}
+section .right .name:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    display: block;
+  }
+  .content .left {
+    width: 90%;
+    height: 70%;
+  }
+  .content .right {
+    display: hidden;
+  }
+}
+@media screen and (max-width: 556px) {
+  .content {
+    display: block;
+  }
+  .content .left {
+    width: 90%;
+    height: 70%;
+  }
+  .content .left .cad-produtos .id, .content .left .cad-produtos .nome, .content .left .cad-produtos .imagem, .content .left .cad-produtos .descricao, .content .left .cad-produtos .preco {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 475px) {
+  body header .logo {
+    font-size: 2rem;
+  }
+  .content {
+    width: 90%;
+  }
+  .content .left {
+    width: 100%;
+    height: 100vh;
+  }
+  .content .left h2 {
+    font-size: 20px;
+  }
+  .content .left .cad-produtos .id, .content .left .cad-produtos .nome, .content .left .cad-produtos .imagem, .content .left .cad-produtos .descricao, .content .left .cad-produtos .preco {
+    width: 300px;
+  }
+  .content .left .cad-produtos label {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 325px) {
+  body header .logo {
+    font-size: 2rem;
+  }
+  .content {
+    width: 90%;
+  }
+  .content .left {
+    width: 100%;
+    height: 100vh;
+  }
+  .content .left h2 {
+    font-size: 20px;
+  }
+  .content .left .cad-produtos .id, .content .left .cad-produtos .nome, .content .left .cad-produtos .imagem, .content .left .cad-produtos .descricao, .content .left .cad-produtos .preco {
+    width: 300px;
+  }
+  .content .left .cad-produtos label {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=alterar.css.map */

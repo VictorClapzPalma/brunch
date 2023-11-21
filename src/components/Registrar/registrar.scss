@@ -1,0 +1,199 @@
+@font-face {
+    font-family: font1;
+    src: url("../../assets/fonts/Lobster-Regular.ttf");
+}
+
+@font-face {
+    font-family: font2;
+    src: url("../../assets/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: font3;
+    src: url("../../assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: font4;
+    src: url("../../assets/fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: font5;
+    src: url("../../assets/fonts/Manuale-Light.ttf");
+}
+
+
+    
+    
+section{
+    display: flex;
+    flex-direction: row;
+    .left{
+        font-family: font5;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        line-height: 3rem;
+        border-right: #FFD700 solid 4px;
+        background-color: #b2b2b2;
+        line-height: 5.5rem;
+        flex-direction: column;
+
+        h2{
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .cad-produtos{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            input{
+                width: 350px;
+                height: 30px;
+                border-radius: 30px;
+                border: none;
+
+            }
+            label{
+                font-size: 25px;
+                color: white;
+            }
+
+
+            .id,.nome,.imagem,.descricao,.preco{
+                
+                margin-bottom: 30px;
+                width: 500px;
+                height: 50px;
+                border-radius: 30px;
+                background-color: #FFD700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+            }
+            .nome{
+                label{
+                    margin-right:20px;
+                }
+            }
+
+            .id{
+                input{
+                    margin-left: 40px;
+                }
+            }
+
+            .imagem{
+                label{
+                    margin-left: 20px;
+                }
+            }
+
+            .descricao{
+                gap: 5px;
+                input{
+                    margin-right: 25px;
+                }
+            }
+            
+        }
+        .botao{
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 20px;
+                
+            button{
+                font-family: font2;
+                border: none;
+                border-radius: 30px;
+                background-color: green;
+                width: 200px;
+                height: 40px;
+                font-size: 20px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 1010px) {
+section{
+    flex-direction: column;
+    .left{
+        
+        width: 500px;
+        height: 600px;
+    }
+    .Right{
+       display: none;
+    }
+}
+}
+
+@media screen and (max-width: 556px) {
+section{
+    display: block;
+    .left{
+        width: 90%;
+        height: 70%;
+
+        .cad-produtos{
+            .id,.nome,.imagem,.descricao,.preco{
+                width: 400px;
+            }
+        }
+    }
+}
+
+}
+
+@media screen and (max-width: 475px) {
+body{
+   header{
+    .logo{
+        font-size: 2rem;
+    }
+} 
+}
+
+section{
+    width: 90%;
+    
+    .left{
+        width: 100%;
+        height: 100vh;
+        h2{
+            font-size: 20px;
+        }
+        .cad-produtos{
+            .id,.nome,.imagem,.descricao,.preco{
+                width: 300px;
+               
+            }
+            label{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+}
+
+
+
+   

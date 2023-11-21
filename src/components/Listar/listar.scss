@@ -1,0 +1,157 @@
+@font-face {
+    font-family: font1;
+    src: url("../../assets/fonts/Lobster-Regular.ttf");
+}
+
+@font-face {
+    font-family: font2;
+    src: url("../../assets/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: font3;
+    src: url("../../assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: font4;
+    src: url("../../assets/fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: font5;
+    src: url("../../assets/fonts/Manuale-Light.ttf");
+}
+
+
+
+
+.listagem{
+    display: flex;
+    flex-direction: row;
+}
+
+.sec2 {
+    flex-direction: column;
+    width: 60vw;
+    height: 84vh;
+
+    border-right: 5px solid #FFD700;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+
+    .tituloSec2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+
+
+        h1 {
+            font: 40px font2;
+            color: #FFD700;
+            padding-bottom: 60px;
+        }
+
+    }
+
+    .cabecalho-sec2{
+        display: flex;
+        justify-content: space-around;
+        font: 26px font2;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+
+    hr {
+        border: 1px solid;
+        margin-top: 20px;
+    }
+
+    .insereProduto{
+        height: 60%;
+        overflow: hidden;
+        font-family: font2;
+
+        text-img{
+            display: flex;
+            flex-direction: column;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .produto {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 120px;
+        border: 1.5px solid black;
+        
+    
+
+        p {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            height: 110px;
+            width: 100px;
+                    
+        }
+        
+        .codigo{
+            margin-left: 100px;
+            margin-right: 120px;   
+            
+
+        }
+        .text1{
+            margin-right: 120px; 
+           
+        }
+
+        .descricao{
+        
+            margin-right: 220px; 
+           
+        }
+        
+        .valor{
+            margin-right: 30px;
+        }
+        
+
+    }
+
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    .divbotao {
+        margin-top: 30px;
+
+        button {
+            border: 2px solid black;
+            height: 50px;
+            width: 200px;
+            border-radius: 50px;
+            background-color: green;
+            color: white;
+            border: none;
+            font: 32px font3;
+            margin-left: 90px;
+
+            &:hover {
+                background-color: #287233;
+                box-shadow: rgba(0, 2, 0, 0.9) 0px 8px 24px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+

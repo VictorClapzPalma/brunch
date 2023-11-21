@@ -1,0 +1,58 @@
+@font-face {
+    font-family: font1;
+    src: url("../../assets/fonts/Lobster-Regular.ttf");
+}
+
+@font-face {
+    font-family: font2;
+    src: url("../../assets/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: font3;
+    src: url("../../assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: font4;
+    src: url("../../assets/fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: font5;
+    src: url("../../assets/fonts/Manuale-Light.ttf");
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    text-align: center;
+    line-height:60px;
+    
+    
+    .name{
+        font-family: font2;
+        text-decoration: none;
+        color: black;
+        margin-top: 60px;
+        cursor: pointer;
+        font-size: 32px;
+    }
+
+    .name:hover{
+        text-decoration: underline;
+    }
+}
+
+
+@media screen and (max-width: 1010px) {
+    section{
+        flex-direction: column;
+        
+        .right{
+           
+        }
+    }
+    }

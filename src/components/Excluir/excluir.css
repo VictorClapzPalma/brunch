@@ -1,0 +1,148 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 142px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(217, 217, 217, 0.2);
+}
+header .logo {
+  color: #FFD700;
+  margin-left: 3rem;
+}
+header .logo h1 {
+  font-family: font1;
+  font-size: 3rem;
+}
+header .hamburguer-icon {
+  width: 4.735rem;
+  height: 3.875rem;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+section .left {
+  font-family: font5;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  line-height: 3rem;
+  border-right: #FFD700 solid 4px;
+  background-color: #b2b2b2;
+  line-height: 5.5rem;
+  flex-direction: column;
+}
+section .left h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: underline;
+}
+section .left .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #FFD700;
+  margin: 50px;
+}
+section .left .box label {
+  font-size: 25px;
+  color: white;
+}
+section .left .box input {
+  width: 350px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  margin-left: 20px;
+  text-align: center;
+}
+section .left .botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+section .left .botao input {
+  border: none;
+  border-radius: 30px;
+  background-color: green;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+}
+section .right {
+  font-family: font5;
+  font-weight: 300;
+  width: 50%;
+  text-align: center;
+  line-height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+section .right a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+section .right .name {
+  margin-top: 60px;
+  cursor: pointer;
+  font-size: 32px;
+}
+section .right .name:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1000px) {
+  section .content {
+    display: block;
+  }
+  section .content .left {
+    width: 90%;
+    height: 70%;
+  }
+  section .content .right {
+    display: none;
+  }
+}
+@media screen and (max-width: 556px) {
+  section .content {
+    display: block;
+  }
+  section .content .left {
+    width: 90%;
+    height: 70%;
+  }
+  section .content .left .cad-produtos .id, section .content .left .cad-produtos .nome, section .content .left .cad-produtos .imagem, section .content .left .cad-produtos .descricao, section .content .left .cad-produtos .preco {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 475px) {
+  section body header .logo {
+    font-size: 2rem;
+  }
+  section .content {
+    width: 90%;
+  }
+  section .content .left {
+    width: 100%;
+    height: 100vh;
+  }
+  section .content .left h2 {
+    font-size: 20px;
+  }
+  section .content .left .cad-produtos .id, section .content .left .cad-produtos .nome, section .content .left .cad-produtos .imagem, section .content .left .cad-produtos .descricao, section .content .left .cad-produtos .preco {
+    width: 300px;
+  }
+  section .content .left .cad-produtos label {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=excluir.css.map */

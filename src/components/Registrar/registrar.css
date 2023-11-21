@@ -1,0 +1,145 @@
+@font-face {
+  font-family: font1;
+  src: url("../../assets/fonts/Lobster-Regular.ttf");
+}
+@font-face {
+  font-family: font2;
+  src: url("../../assets/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: font3;
+  src: url("../../assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: font4;
+  src: url("../../assets/fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: font5;
+  src: url("../../assets/fonts/Manuale-Light.ttf");
+}
+section {
+  display: flex;
+  flex-direction: row;
+}
+section .left {
+  font-family: font5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  line-height: 3rem;
+  border-right: #FFD700 solid 4px;
+  background-color: #b2b2b2;
+  line-height: 5.5rem;
+  flex-direction: column;
+}
+section .left h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+section .left .cad-produtos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section .left .cad-produtos input {
+  width: 350px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+}
+section .left .cad-produtos label {
+  font-size: 25px;
+  color: white;
+}
+section .left .cad-produtos .id, section .left .cad-produtos .nome, section .left .cad-produtos .imagem, section .left .cad-produtos .descricao, section .left .cad-produtos .preco {
+  margin-bottom: 30px;
+  width: 500px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #FFD700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+section .left .cad-produtos .nome label {
+  margin-right: 20px;
+}
+section .left .cad-produtos .id input {
+  margin-left: 40px;
+}
+section .left .cad-produtos .imagem label {
+  margin-left: 20px;
+}
+section .left .cad-produtos .descricao {
+  gap: 5px;
+}
+section .left .cad-produtos .descricao input {
+  margin-right: 25px;
+}
+section .left .botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+section .left .botao button {
+  font-family: font2;
+  border: none;
+  border-radius: 30px;
+  background-color: green;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1010px) {
+  section {
+    flex-direction: column;
+  }
+  section .left {
+    width: 500px;
+    height: 600px;
+  }
+  section .Right {
+    display: none;
+  }
+}
+@media screen and (max-width: 556px) {
+  section {
+    display: block;
+  }
+  section .left {
+    width: 90%;
+    height: 70%;
+  }
+  section .left .cad-produtos .id, section .left .cad-produtos .nome, section .left .cad-produtos .imagem, section .left .cad-produtos .descricao, section .left .cad-produtos .preco {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 475px) {
+  body header .logo {
+    font-size: 2rem;
+  }
+  section {
+    width: 90%;
+  }
+  section .left {
+    width: 100%;
+    height: 100vh;
+  }
+  section .left h2 {
+    font-size: 20px;
+  }
+  section .left .cad-produtos .id, section .left .cad-produtos .nome, section .left .cad-produtos .imagem, section .left .cad-produtos .descricao, section .left .cad-produtos .preco {
+    width: 300px;
+  }
+  section .left .cad-produtos label {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=registrar.css.map */
